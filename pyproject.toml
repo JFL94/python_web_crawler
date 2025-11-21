@@ -1,7 +1,7 @@
 [project]
 name = "crawler"
 version = "0.1.0"
-description = "Add your description here"
+description = "北市職能發展學院Python視窗網路爬蟲上課用"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []

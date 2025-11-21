@@ -1,2 +1,2 @@
-## 第二堂課
-GitHub下載至VScode
+## 第二堂課GitHub同步下載至VScode
+原始檔控制>同步變更↓
