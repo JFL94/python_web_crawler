@@ -17,20 +17,20 @@ def main():
 
         # 取得當前html檔案的絕對路徑
         current_dir=os.path.dirname(os.path.abspath(__file__))    
-        html_file=os.path.join(current_dir,"form_demo.html")
+        html_file=os.path.join(current_dir,"login_demo.html")
+        
         # print(f"file://{html_file}")
         
         # 訪問網站
         page.goto(f"file://{html_file}")
 
         # 自動填寫表單
-        page.fill("input#name","test1")     # 操作網頁中<input>輸入框填寫
-        page.fill("input#email","test1@gmail.com")  ## 操作網頁中<input>輸入框填寫
-        page.select_option("select#country","Taiwan") # 操作網頁中<select>下拉選單
-        page.check("input#subscribe") #操作網頁中 checkbox 或 radio button
-        page.click("button#submit")
+        page.fill("#username","admin")     # 操作網頁中<input>輸入框填寫
+        page.fill("#password","password")  # 操作網頁中<input>輸入框填寫
+        page.click("#login-button")
         page.wait_for_load_state("networkidle")
-        page.wait_for_timeout(2000) #取代 time的sleep()
+        
+        page.wait_for_timeout(5000) #取代 time的sleep()
 
         # #指定秒數內暫停執行
         # sleep(3)
