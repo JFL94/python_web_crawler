@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 from time import sleep # 通用作業系統服務模組 sleep()函式
 
-# print(type(sync_playwright)) 
+print(type(sync_playwright)) 
 
 def main():
     with sync_playwright() as p:

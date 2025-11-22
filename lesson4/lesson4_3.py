@@ -23,8 +23,11 @@ def main():
         # 訪問網站
         page.goto(f"file://{html_file}")
 
-        # 取得網站標題
-        # print(page.title())
+        # 自動填寫表單
+        page.fill("input#name","test1")     # 填充內容fill(選取器,值)
+        page.fill("input#email","test1@gmail.com")  # 填充內容fill(選取器,值)
+        page.select_option("select#country","Taiwan")
+        page.check("input#subscribe")
 
         #指定秒數內暫停執行
         sleep(3)
